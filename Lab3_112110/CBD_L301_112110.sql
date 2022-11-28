@@ -24,7 +24,7 @@
                   ... name_student text,
                   ... subjects_student set<text>
                   ... professors_student list<text>,
-                  ... ;
+                  ... );
         cqlsh:prueba> DESCRIBE TABLES
 
         student
