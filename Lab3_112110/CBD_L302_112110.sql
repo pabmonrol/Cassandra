@@ -243,13 +243,3 @@
                 SELECT json * from ratings;
 
 
-
-
--- c).
-
---- Media
-
-The avg function can be used to compute the average of all the values returned by a query for a given column.
-
-bc(sample).
-SELECT AVG (players) FROM plays
