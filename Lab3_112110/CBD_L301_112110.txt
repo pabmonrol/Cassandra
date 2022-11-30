@@ -155,7 +155,7 @@
               4 | {'ingles': (0, 4, 3), 'math': (3, 7, 1)} |        Maria |  ['Juan', 'Ana', 'Lucia']
               3 | {'ingles': (5, 7, 8), 'math': (3, 5, 9)} |        Maria |  ['Juan', 'Ana', 'Lucia']
 
-         
+
     cqlsh:prueba> SELECT * FROM student;
 
      id_student | marks_student                            | name_student | professors_student
