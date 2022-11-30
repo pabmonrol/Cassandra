@@ -1,4 +1,4 @@
-from CBD_L3_112110 import *
+from CBD_L303_112110 import *
 
 
 def test_follower_of_video():
@@ -27,6 +27,7 @@ def test_min_rating_of_video():
 
 
 if __name__ == '__main__':
+    print('Results:')
 
     # print('Todos os seguidores (followers) de determinado vídeo:')
     # print(test_follower_of_video())
