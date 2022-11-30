@@ -31,7 +31,22 @@
     -- Three grapes with a given id. Orders by date_harvest:
         SELECT * FROM Grapes WHERE id_grape = 10 ORDER BY date_harvest DESC LIMIT 3;
 
-    --
+    -- Select a caller given a id and a name and an owner:
+        SELECT * FROM Callers WHERE id_caller = 4 AND cellar_name = 'Morissette-Barton' AND owner_name 'Esbjörn';
 
+    -- Select all Owners:
+        SELECT * FROM Owners;
+
+    -- Select owners with a given id:
+        SELECT * FROM Owners WHERE id_owner = 3;
+
+    -- Count how many cellars there are with a given id:
+        SELECT count(id_cellar) FROM cellars WHERE id_cellar=8;
+
+    -- Select owners with a expecifical cellar:
+        SELECT * FROM Owners WHERE cellar_names CONTAINS 'DuBuque and Sons' ALLOW FILTERING;
+
+    -- Select owners given a ip and between two dates:
+        SELECT * FROM Grapes WHERE id_grape = 6 AND date_harvest<'2022-11-24 17:25:39' AND date_harvest>'2022-06-26 02:16:17';
 
 
