@@ -14,7 +14,7 @@
 
  -- Create tables:
         CREATE TABLE Users(id_user int,username text,name text,email text,register_date timestamp,PRIMARY KEY(id_user, username, email));
-        CREATE TABLE Videos(id_video int,author text,title_video text,description text,tag_set set<text>,upload_date timestamp,PRIMARY KEY (id_video));
+        CREATE TABLE Videos(id_video int,author text,title_video text,description text,tag_set set<text>,upload_date timestamp,PRIMARY KEY (id_video, upload_date)) WITH CLUSTERING ORDER BY (upload_date DESC);
         CREATE TABLE Comments(id_comment int,id_user int,id_video int,comment text,create_date timestamp,PRIMARY KEY (id_comment, create_date)) WITH CLUSTERING ORDER BY (create_date DESC);
         CREATE TABLE Followers(id_video int, set_email set<text> ,PRIMARY KEY(id_video));
         CREATE TABLE Events(id_event int,id_video int,id_user int,type text,time_video int,create_date timestamp,PRIMARY KEY (id_event));
