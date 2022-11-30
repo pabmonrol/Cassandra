@@ -82,14 +82,14 @@
         ---- I used "[...]WITH CLUSTERING ORDER BY (upload_date DESC);" at the moment of creation comments table so:
         SELECT * FROM Videos;
 
-    --- Lista com as Tags existentes e o número de vídeos catalogados com cada uma delas:
+    --- Lista com as Tags existentes e o número de vídeos  catalogados com cada uma delas:
         ---- This exercise is impossible in Cassandra
 
     --- O rating mínimo de um vídeo:
         SELECT min(rating) FROM ratings WHERE id_video = 97995;
 
     --- Mostrar a quantidade de usuários na data 81449316859:
-        SELECT count(id_user) FROM users where register_date = 81449316859;
+        SELECT count(id_user) FROM users WHERE register_date = 81449316859;
 
 
 
